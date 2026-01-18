@@ -49,3 +49,12 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-neutral-800 hover:bg-neutral-700;
 }
+
+@keyframes slow-zoom {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.2); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-in-out infinite alternate;
+}
